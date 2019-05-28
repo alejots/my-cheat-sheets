@@ -1,0 +1,11 @@
+{
+  "name": "my-cheat-sheets",
+  "version": "1.0.0",
+  "description": "Helping cheat-sheets to remember code structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Tunaroza",
+  "license": "ISC"
+}
