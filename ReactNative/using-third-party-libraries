@@ -1,0 +1,36 @@
+AUTOMATIC LINKING
+    In this module (and in this course in general), you learn how to manually link libraries. It's always important to be aware of happens behind the scenes and it's also not that difficult.
+
+    Additionally, a lot of libraries take some extra steps during the linking process which can't be automated.
+
+    For libraries that don't require such extra steps, there is an automated way of linking available though.
+
+    You'll need to install an extra package: react-native-cli
+
+    It's actually installed locally in your project already but if you want to run commands with it, you need to install it globally.
+
+    Install it globally via npm install -g react-native-cli
+
+    Thereafter, in your project folder, you can run
+        $ react-native link
+    to automatically link all libraries that require linking.
+
+    Important: ALWAYS check the docs (e.g. on the Github repo page) of the library you're using! You definitely have to ensure that no additional steps are required!
+
+MANUAL LINKING - For iOS
+
+1. Install de third party library.
+
+    $ npm install --save react-native-vector-icons
+
+2. Inside the iOS folder, open the xCode project (myapp.xcodeproj)
+3. In the 'Project Navigation', right click on libraries and 'add files to ...'
+4. Navigate the 'node_modules' folder, search the package folder and add the xcode project file of the library.
+5. Open 'Build Phases' and then Link Binary With libraries.
+6. Add the new library to the list using the + button and searching the name of the package.
+7. Follow the rest of the instrucctions of the library (IMPORTANT)
+
+MANUAL LINKING - For Android
+
+Don't be lazy and follow the instructions of every package. :)
+
